@@ -1,0 +1,114 @@
+\documentclass[10pt,conference,letterpaper]{IEEEtran}
+
+\usepackage[utf8]{inputenc}                   % Para escribir tildes y eñes
+\usepackage[spanish]{babel}                   % Para que los títulos de figuras, tablas y otros estén en español
+\usepackage{amsmath}      % Los paquetes ams son desarrollados por la American Mathematical Society
+\usepackage{amsfonts}     % y mejoran la escritura de fórmulas y símbolos matemáticos.
+\usepackage{amssymb}
+\usepackage[dvips]{graphicx} % LaTeX
+\DeclareGraphicsExtensions{.bmp,.png,.pdf,.jpg}
+\usepackage{graphicx}     % Para insertar gráficas
+
+\usepackage[justification=centering]{caption}
+ \usepackage{epsfig}
+ \usepackage{cite}
+ \usepackage{amsmath,amsfonts,amssymb,standalone}
+ \usepackage{color}
+ \usepackage{tikz,forest}
+ \usepackage{verbatim}
+ \usepackage{xcolor}
+ \usepackage{minted}
+ \usepackage{epstopdf}
+ %%%AGREGADOS
+ \usepackage{color}
+\definecolor{gray97}{gray}{.97}
+\definecolor{gray75}{gray}{.75}
+\definecolor{gray45}{gray}{.45}
+\usepackage{adjustbox}
+\usepackage{color}
+\usepackage{graphicx}
+\usepackage{epsfig}
+\usepackage{multirow}
+\usepackage{colortbl}
+\definecolor{bl}{rgb}{0.6602, 0.796875, 0.8862}
+\definecolor{cl}{rgb}{0.8359, 0.9140625, 0.96875}
+\definecolor{bg}{rgb}{0.95,0.95,0.95}
+
+\usepackage{unitsdef}	  % Para la presentación correcta de unidades
+\renewcommand{\unitvaluesep}{\hspace*{2pt}}	% Redimensionamiento del espacio entre magnitud y unidad
+\usepackage[colorlinks=true,urlcolor=blue,linkcolor=black,citecolor=blue]{hyperref}     % Para insertar hipervínculos y marcadores
+\usepackage{float}		% Para ubicar las tablas y figuras justo después del texto
+\usepackage{booktabs}	% Para hacer tablas más estilizadas
+\batchmode
+\pagenumbering{arabic}
+\usepackage{lastpage}
+\usepackage{svg}
+%\userpackage{pdfpages} 
+\usepackage{longtable}
+\usepackage{array}
+\usepackage{pdfpages}
+\newtheorem{theorem}{Theorem}
+\setcounter{page}{1}
+
+%%%ENCABEZADOS
+\usepackage{fancyhdr}	% Para manejar los encabezados y pies de página
+\pagestyle{fancy}		% Contenido de los encabezados y pies de pagina
+\lhead{MP-6104 Procesamiento Digital de Señales}
+%\chead{Julio/21/2020}
+\rhead{III Cuatrimestre 2020}
+\lfoot{Escuela de Ingeniería Electrónica}
+\cfoot{\thepage\ de \pageref{LastPage}}
+\rfoot{Instituto Tecnológico de Costa Rica}
+\author{
+\IEEEauthorblockN{\textbf{$\cdot$  David Martínez García}}
+\IEEEauthorblockA{2013005337\\
+\texttt{david.martinez@estudiantec.cr}}
+\and
+\IEEEauthorblockN{\textbf{$\cdot$  José Martínez Hernández}}
+\IEEEauthorblockA{2020426476\\
+\texttt{jpmh.1309@estudiantec.cr}}}
+\title{
+		\textsc{\LARGE Instituto Tecnológico de Costa Rica}\\[-0.4 cm]	
+		\textsc{\Large Escuela de Ingeniería Electrónica}\\[-0.4 cm]
+		\textsc{\large MP-6104 Procesamiento Digital de Señales}\\[-0.5 cm]
+		\rule{\linewidth}{0.2 mm} \\[-0.1 cm]
+		\textsc{\LARGE \bfseries Proyecto #1: Esteganografía por Enmascaramiento con Eco \\[-0.7 cm]} 
+		\rule{\linewidth}{0.2 mm} \\[-1.0 cm]
+}
+
+\begin{document}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%PORTADA
+\pdfbookmark[1]{Portada}{portada} 	% Marcador para el título
+\maketitle							% Título
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+%%% RESUMEN
+\input{zb_Resumen.tex}
+
+%%% INTRODUCCIÓN
+\input{zc_Introduccion.tex}
+
+%%% PROYECTO 1
+%\input{zd_Proyecto1.tex}
+
+%%% PROYECTO 2
+%\input{zd_Proyecto2.tex}
+
+%%% PROYECTO 3
+%\input{zd_Proyecto3.tex}
+
+%%% PROYECTO 4
+%\input{zd_Proyecto4.tex}
+
+%%% PROYECTO 5
+%\input{zd_Proyecto5.tex}
+
+%%% REFERENCIAS
+\input{ze_Bilbliografia.tex}
+
+%%% APENDICES
+\input{zf_Append.tex}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\end{document}

@@ -1,0 +1,28 @@
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%% SYSTEM C AMS 
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\section{\textbf{System C AMS}}
+
+El MMIO se conecta a los sistemas analógicos. Entre los sistemas analogicos diseñados se encuentran los DAC, los motores DC y emisor/receptor del control remoto.
+
+El motor DC se modelo de la siguiente manera:
+
+\begin{equation}
+    H(s) = \frac{1}{1+0.003s}
+    
+Y para el emisor/receptor del control remoto se usa una señal PPM modulada con BASK, en las hsiguientes figuras se puede observar los diagramas del sistemas desarrollado.
+ 
+\end{equation}
+\begin{figure}[H]
+\centering
+\includegraphics[width=0.8\linewidth]{img/RC_TX.png}
+\caption{System C AMS RC TX}
+\label{F:rc_tx}
+\end{figure}
+
+\begin{figure}[H]
+\centering
+\includegraphics[width=0.8\linewidth]{img/RC_RX.png}
+\caption{System C AMS RC RX}
+\label{F:rc_rx}
+\end{figure}
